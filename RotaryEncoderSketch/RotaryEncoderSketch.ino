@@ -1,7 +1,7 @@
-// Rotary Encoder Inputs
-#define CLK 23
-#define DT 22
-#define SW 5
+  // Rotary Encoder Inputs
+#define CLK 13 
+#define DT 12
+#define SW 14
 
 int counter = 0;
 int currentStateCLK;
@@ -17,7 +17,7 @@ void setup() {
   pinMode(SW, INPUT_PULLUP);
 
   // Setup Serial Monitor
-  Serial.begin(115200);
+  Serial.begin(9600);
 
   // Read the initial state of CLK
   lastStateCLK = digitalRead(CLK);
